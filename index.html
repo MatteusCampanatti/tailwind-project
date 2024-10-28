@@ -5,27 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glamora</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- RGo 20241023 not working script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#BDE4E0",
-              secondary: "#2A2117",
-              tertiary: "#E4C7AC",
-            },
-          },
-        },
-      };
-    </script -->
-    <!-- style type="text/tailwindcss">
+  
+    <style type="text/tailwindcss">
       @layer components {
         .heading {
           @apply text-3xl font-bold underline bg-secondary;
         }
       }
-    </style -->
+
+      @keyframes wave {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100px;
+        background: linear-gradient(
+          270deg,
+          rgba(189, 228, 224, 0.5) 10%,
+          transparent 25%,
+          transparent 75%,
+          rgba(189, 228, 224, 0.5) 15%
+        );
+        background-size: 50% 100px;
+        animation: wave 15s linear infinite;
+        z-index: 1;
+      }
+    </style>
   </head>
+
+    
   <body class="bg-gray-200 p-5">
     <header>
       <div class="bg-white px-5">top nav</div>
@@ -36,9 +53,54 @@
       </nav>
     </header>
     <main class="max-wd-md bg-white">
-      <div class="bg-white px-5">
-        hero
-        <!-- by Mathias -->
+      
+      <div class="wave"></div>
+      <div class="wave"></div>
+  
+      <div class="text-center z-10 relative p-8">
+        <h1
+          class="text-5xl font-bold text-black drop-shadow-lg transition-transform duration-300 transform hover:scale-105"
+        >
+          Discover Your Signature Scent
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 italic">
+          Explore our curated collection of exquisite fragrances.
+        </p>
+  
+        <div class="mt-8">
+          <p class="text-lg text-gray-800">Click here</p>
+          <div class="mt-2 animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-800 mx-auto"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 15.293l4.293-4.293a1 1 0 00-1.414-1.414L10 12.586l-2.879-2.879a1 1 0 00-1.414 1.414L10 15.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-center mt-8">
+          <button
+            class="bg-white text-black font-bold py-2 px-4 rounded shadow hover:bg-[#BDE4E0]"
+          >
+            Sign up for 25% discount on your first purchase!
+          </button>
+        </div>
+      </div>
+  
+      <!-- Banner Image -->
+      <div class="mt-8 w-full">
+        <img
+          src="https://i0.wp.com/nicheperfu.me/wp-content/uploads/2024/02/SevenxWomensxEDPs_1296x.webp?fit=1024%2C439&ssl=1"
+          alt="Banner"
+          class="w-full h-auto object-cover"
+        />
       </div>
       <!-- Brands-->
       <section class="max-w-screen-lg mx-auto p-5">
