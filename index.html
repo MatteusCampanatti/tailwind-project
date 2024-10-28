@@ -5,31 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glamora</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#BDE4E0",
-              secondary: "#2A2117",
-              tertiary: "#E4C7AC",
-            },
-          },
-        },
-      };
-    </script>
+  
     <style type="text/tailwindcss">
       @layer components {
         .heading {
           @apply text-3xl font-bold underline bg-secondary;
         }
       }
-    </style>
 
-    <!--
-      TODO: "wave" moving animaiton css
-    -->
-    <style>
       @keyframes wave {
         0% {
           transform: translateX(0);
@@ -58,56 +41,425 @@
       }
     </style>
   </head>
-  <body
-    class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative"
-  >
-    <div class="wave"></div>
-    <div class="wave"></div>
 
-    <div class="text-center z-10 relative p-8">
-      <h1
-        class="text-5xl font-bold text-black drop-shadow-lg transition-transform duration-300 transform hover:scale-105"
-      >
-        Discover Your Signature Scent
-      </h1>
-      <p class="mt-4 text-lg text-gray-600 italic">
-        Explore our curated collection of exquisite fragrances.
-      </p>
-
-      <div class="mt-8">
-        <p class="text-lg text-gray-800">Click here</p>
-        <div class="mt-2 animate-bounce">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-800 mx-auto"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+    
+  <body class="bg-gray-200 p-5">
+    <header>
+      <div class="bg-white px-5">top nav</div>
+      <div class="bg-green-200 px-5">top-sales</div>
+      <h1 class="max-w-md mx-auto font-bold">Glamora</h1>
+      <nav class="bg-white px-5">
+        <!-- by Mathias -->
+      </nav>
+    </header>
+    <main class="max-wd-md bg-white">
+      
+      <div class="wave"></div>
+      <div class="wave"></div>
+  
+      <div class="text-center z-10 relative p-8">
+        <h1
+          class="text-5xl font-bold text-black drop-shadow-lg transition-transform duration-300 transform hover:scale-105"
+        >
+          Discover Your Signature Scent
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 italic">
+          Explore our curated collection of exquisite fragrances.
+        </p>
+  
+        <div class="mt-8">
+          <p class="text-lg text-gray-800">Click here</p>
+          <div class="mt-2 animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-800 mx-auto"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 15.293l4.293-4.293a1 1 0 00-1.414-1.414L10 12.586l-2.879-2.879a1 1 0 00-1.414 1.414L10 15.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-center mt-8">
+          <button
+            class="bg-white text-black font-bold py-2 px-4 rounded shadow hover:bg-[#BDE4E0]"
           >
-            <path
-              fill-rule="evenodd"
-              d="M10 15.293l4.293-4.293a1 1 0 00-1.414-1.414L10 12.586l-2.879-2.879a1 1 0 00-1.414 1.414L10 15.293z"
-              clip-rule="evenodd"
+            Sign up for 25% discount on your first purchase!
+          </button>
+        </div>
+      </div>
+  
+      <!-- Banner Image -->
+      <div class="mt-8 w-full">
+        <img
+          src="https://i0.wp.com/nicheperfu.me/wp-content/uploads/2024/02/SevenxWomensxEDPs_1296x.webp?fit=1024%2C439&ssl=1"
+          alt="Banner"
+          class="w-full h-auto object-cover"
+        />
+      </div>
+      <!-- Brands-->
+      <section class="max-w-screen-lg mx-auto p-5">
+        <h2 class="text-2xl font-semibold mb-5 text-center">Our Brands</h2>
+        <article class="bg-white px-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >O' de Cloaca</a
+          >
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >CORE</a
+          >
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >Glamora</a
+          >
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >Farmers Taste</a
+          >
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >Peaches</a
+          >
+          <a href="#"
+            class="m-1 p-2 border border-gray-300 text-center block transition duration-200 ease-in-out transform hover:scale-105 hover:bg-gray-100 hover:border-gray-400 active:scale-95"
+            >advantage</a
+          >
+        </article>
+      </section>
+      <section class="max-w-screen-lg mx-auto p-5">
+        <!-- Titel des Produktkatalogs -->
+        <h2 class="text-2xl font-semibold mb-5 text-center">Our Brand Highlights</h2>
+
+        <!-- Hauptproduktbild -->
+        <a href="/produkte/hauptprodukt" class="block relative mb-4">
+          <img src="https://images.unsplash.com/photo-1521837670401-2bd439d49e6d?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hauptprodukt" class="w-full h-auto object-cover rounded-lg shadow-lg">
+          <div class="inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white p-5 rounded-lg">
+            <div class="text-center">
+              <h3 class="text-xl font-semibold">Luxus Lipsticks</h3>
+              <p class="text-sm mt-2">Indulge in pure elegance with luxury lipsticks that combine rich, velvety color with lasting hydration.</p>
+            </div>
+          </div>
+        </a>
+      
+        <!-- Drei kleinere Produktbilder im flexiblen Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a href="/produkte/produkt1" class="relative">
+            <img src="https://images.unsplash.com/photo-1643185450492-6ba77dea00f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Produkt 1" class="w-full h-auto object-cover rounded-lg shadow-md">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 rounded-b-lg">
+              <h4 class="text-md font-semibold">Unlock your beauty potential with <b>makeup products</b> that blend innovation, quality, and timeless style.</h4>
+            </div>
+          </a>
+      
+          <a href="/produkte/produkt2" class="relative">
+            <img src="https://images.unsplash.com/photo-1546333603-2895edefc462?q=80&w=1969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Produkt 2" class="w-full h-auto object-cover rounded-lg shadow-md">
+            <div class="bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 rounded-b-lg">
+              <h4 class="text-md font-semibold">Elevate your look with <b>mascara</b> that adds stunning volume, length, and intensity to every lash</h4>
+            </div>
+          </a>
+      
+          <a href="/produkte/produkt3" class="relative">
+            <img src="https://images.unsplash.com/photo-1571782742478-0816a4773a10?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Produkt 3" class="w-full h-auto object-cover rounded-lg shadow-md">
+            <div class="bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 rounded-b-lg">
+              <h4 class="text-md font-semibold">Hydrate and nourish your skin all day with our <b>moisturizing day cream</b> for a radiant, refreshed glow.</h4>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="max-w-screen-lg mx-auto p-6 my-10">
+        <!-- Title of the Advice Section -->
+        <h2 class="text-2xl font-semibold text-center mb-8">Beauty Guide</h2>
+      
+        <!-- Grid for Advice Articles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Article 1 -->
+          <a href="/guide/skincare-tips" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1564594326930-17381130fd2e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skincare Tips" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">10 Tips for Glowing Skin</h3>
+              <p class="text-gray-600 text-sm">Learn how to care for your skin and discover the best products for your skin type.</p>
+            </div>
+          </a>
+      
+          <!-- Article 2 -->
+          <a href="/guide/makeup-tips" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Makeup Tips" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Makeup Tips for a Perfect Look</h3>
+              <p class="text-gray-600 text-sm">Explore makeup techniques that will elevate your look to the next level.</p>
+            </div>
+          </a>
+      
+          <!-- Article 3 -->
+          <a href="/guide/haircare" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1610595433626-e45abdb5a88b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haircare Guide" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Haircare: Tips for Healthy Hair</h3>
+              <p class="text-gray-600 text-sm">From choosing the right shampoo to caring for different hair types—find out more.</p>
+            </div>
+          </a>
+
+          <a href="/guide/natural-cosmetics" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1653481025529-c8a34e8b6a7c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Natural Cosmetics" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Natural Cosmetics for Sensitive Skin</h3>
+              <p class="text-gray-600 text-sm">Discover the benefits and applications of natural beauty products.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="max-w-screen-lg mx-auto p-6 my-10">
+        <!-- Section Title -->
+        <h2 class="text-2xl font-semibold text-center mb-8">Our Store Services</h2>
+      
+        <!-- Grid for Services -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service 1: Skincare Consultation -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://plus.unsplash.com/premium_photo-1677283511146-52fa442feb2f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skincare Consultation" class="w-42 h-42
+             mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Skincare Consultation</h3>
+            <p class="text-gray-600 text-sm">Get personalized advice from our experts to find the best skincare products for you.</p>
+          </div>
+      
+          <!-- Service 2: Makeup Tutorials -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Makeup Tutorials" class="w-42 h-42 mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Makeup Tutorials</h3>
+            <p class="text-gray-600 text-sm">Learn from our makeup artists with in-store tutorials tailored to your style.</p>
+          </div>
+      
+          <!-- Service 3: Gift Wrapping -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://plus.unsplash.com/premium_photo-1667343251614-9ad053254a3c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gift Wrapping" class="w-42 h-42 mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Gift Wrapping</h3>
+            <p class="text-gray-600 text-sm">Make your gift extra special with our complimentary gift-wrapping service.</p>
+          </div>
+      
+          <!-- Service 4: Personalized Product Recommendations -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://plus.unsplash.com/premium_photo-1661583686789-81357fed6b4c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Personalized Recommendations" class="w-42 h-42 mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Personalized Recommendations</h3>
+            <p class="text-gray-600 text-sm">Find the perfect products based on your preferences and skin type.</p>
+          </div>
+      
+          <!-- Service 5: Loyalty Program -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://plus.unsplash.com/premium_photo-1728392520767-0b099a78ec43?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Loyalty Program" class="w-42 h-42 mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Loyalty Program</h3>
+            <p class="text-gray-600 text-sm">Join our loyalty program and earn points with every purchase.</p>
+          </div>
+      
+          <!-- Service 6: Exclusive Member Events -->
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 text-center">
+            <img src="https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exclusive Events" class="w-42 h-42 mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Exclusive Member Events</h3>
+            <p class="text-gray-600 text-sm">Enjoy special invitations to exclusive events and product launches.</p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-screen-lg mx-auto p-6 my-10 text-center bg-gray-50 rounded-lg shadow-md">
+        <!-- Section Title and Description -->
+        <h2 class="text-2xl font-semibold mb-4">Watch Our Beauty Videos</h2>
+        <p class="text-gray-700 mb-6">Get inspired by our tutorials, product tips, and behind-the-scenes clips. See our products in action and learn from the experts.</p>
+      
+        <!-- Grid for Video Thumbnails -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Video 1: Skincare Routine -->
+          <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+            <img src="https://images.unsplash.com/photo-1630398777614-8797b73c4e00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skincare Routine" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Skincare Routine</h3>
+              <p class="text-gray-600 text-sm">Learn how to achieve glowing skin with our simple skincare routine.</p>
+            </div>
+          </a>
+      
+          <!-- Video 2: Makeup Tutorial -->
+          <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+            <img src="https://images.unsplash.com/photo-1602910344008-22f323cc1817?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Makeup Tutorial" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Makeup Tutorial</h3>
+              <p class="text-gray-600 text-sm">Follow along with this tutorial for a fresh, everyday look.</p>
+            </div>
+          </a>
+      
+          <!-- Video 3: Behind the Scenes -->
+          <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+            <img src="https://plus.unsplash.com/premium_photo-1682146720153-4d5bdf56f143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Behind the Scenes" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">Behind the Scenes</h3>
+              <p class="text-gray-600 text-sm">Take a peek behind the scenes at how our products are made.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Online Store-->
+        <section class="max-w-screen-lg mx-auto p-6 my-10 text-center bg-blue-50 rounded-lg shadow-md">
+          <!-- Section Title and Description -->
+          <h2 class="text-2xl font-semibold mb-4">Discover Our Online Store</h2>
+          <p class="text-gray-700 mb-6">Explore curated categories designed to delight and inspire. Find hidden gems and new must-haves for your beauty routine.</p>
+        
+          <!-- Grid of Category Links -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+            <!-- Category 1: Luxury Skincare -->
+            <a href="/store/luxury-skincare" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+              <img src="https://images.unsplash.com/photo-1649928801419-ef29e443b047?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury Skincare" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Luxury Skincare</h3>
+                <p class="text-gray-600 text-sm">Indulge in premium skincare that pampers and rejuvenates your skin.</p>
+              </div>
+            </a>
+        
+            <!-- Category 2: Limited Edition Makeup -->
+            <a href="/store/limited-edition-makeup" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+              <img src="https://images.unsplash.com/photo-1532441807072-e075a14e3b69?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Limited Edition Makeup" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Limited Edition Makeup</h3>
+                <p class="text-gray-600 text-sm">Explore exclusive shades and limited edition pieces while they last.</p>
+              </div>
+            </a>
+        
+            <!-- Category 3: Fragrance Collection -->
+            <a href="/store/fragrances" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden text-left">
+              <img src="https://plus.unsplash.com/premium_photo-1674763813621-7a2b11ed0a84?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fragrance Collection" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Fragrance Collection</h3>
+                <p class="text-gray-600 text-sm">Find your signature scent from our collection of unique fragrances.</p>
+              </div>
+            </a>
+          </div>
+        
+          <!-- Main Call-to-Action Button -->
+          <a href="/store" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-200">
+            Visit the Full Store
+          </a>
+        </section>
+
+        <section class="max-w-screen-md mx-auto p-6 bg-gray-50 rounded-lg shadow-md my-10">
+          <!-- Newsletter-Anmeldeformular -->
+          <h2 class="text-2xl max-w-md mx-auto font-bold">Glamora Newsletter:</h2>
+          <p class="text-center text-gray-600 mb-6">Receive exclusive offers, new products and beauty tips directly to your inbox.</p>
+          <form action="/newsletter" method="POST" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your E-Mail-Addresse"
+              required
+              class="w-full sm:w-auto flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
             />
-          </svg>
+            <button
+              type="submit"
+              class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+            >
+            Subscribe
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer Section -->
+      <div class="flex justify-center space-x-3 font-sans mt-48">
+        <div class="mb-10">
+          <h1 class="flex text-lg font-semibold mb-4">
+            Join our mailing list:
+          </h1>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email address"
+            required
+            class="border border-gray-400 rounded-md p-2 w-64 cursor-pointer"
+          />
+          <input
+            class="border border-gray-400 rounded-md px-6 py-2 hover:bg-gray-200 cursor-pointer text-slate-400"
+            type="submit"
+            value="submit"
+          />
+          <p class="mt-1.5">
+            By subscribing, you agree to our terms
+            <a href="#" class="underline">terms</a>.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-center justify-center mt-8">
-        <button
-          class="bg-white text-black font-bold py-2 px-4 rounded shadow hover:bg-[#BDE4E0]"
-        >
-          Sign up for 25% discount on your first purchase!
-        </button>
-      </div>
-    </div>
+      <div class="flex flex-1 justify-center gap-40">
+        <!-- Payment section -->
+        <div class="flex gap-4 ml-10 mt-48">
+          <div>
+            <img src="Paypal-logo.png" alt="paypal" class="w-16 py-4" />
+            <img src="Klarna-logo.png" alt="klarna" class="w-16 py-4" />
+          </div>
+          <div>
+            <img src="Apple pay-logo.png" alt="apple pay" class="w-16 py-4" />
+            <img src="Matercard-logo.png" alt="mastercard" class="w-16 py-4" />
+          </div>
+          <div>
+            <img src="Visa-logo.png" alt="visa" class="w-16 py-4" />
+            <img src="Amazon.png" alt="amazon" class="w-16 py-4" />
+          </div>
+        </div>
 
-    <!-- Banner Image -->
-    <div class="mt-8 w-full">
-      <img
-        src="https://i0.wp.com/nicheperfu.me/wp-content/uploads/2024/02/SevenxWomensxEDPs_1296x.webp?fit=1024%2C439&ssl=1"
-        alt="Banner"
-        class="w-full h-auto object-cover"
-      />
-    </div>
+        <!-- Delivery Options -->
+        <div class="flex ml-10 mt-48">
+          <div>
+            <img src="DHL.png" alt="DHL" class="w-16 py-4" />
+            <img src="HERMES.jpeg" alt="HERMES" class="w-16 py-4" />
+          </div>
+          <div>
+            <img src="GLS.png" alt="UPS" class="w-16 ml-10 py-4" />
+            <img src="UPS.png" alt="GLS" class="w-16 ml-10 py-4" />
+          </div>
+        </div>
+      </div>
+      <!-- Social Media  -->
+      <div class="flex justify-center space-x-3 ml-10 space-x-3 mt-40">
+        <a href="#"
+          ><img src="facebook.png" alt="facebook" class="w-5 h-5"
+        /></a>
+        <a href="#"
+          ><img src="instagram.jpeg" alt="instagram" class="w-5 h-5"
+        /></a>
+        <a href="#"><img src="tiktok.png" alt="tiktok" class="w-5 h-5" /></a>
+        <a href="#"
+          ><img src="pinterest.png" alt="pinterest" class="w-5 h-5"
+        /></a>
+        <a href="#"><img src="x.png" alt="x" class="w-5 h-5" /></a>
+      </div>
+
+      <!-- footer Links -->
+      <div
+        class="flex justify-center space-x-8 text-gray-600 mb-6 text-sm mt-10"
+      >
+        <a href="#" class="hover:underline">contact us</a>
+        <a href="#" class="hover:underline">faq</a>
+        <a href="#" class="hover:underline">shipping & returns</a>
+        <a href="#" class="hover:underline">order tracking</a>
+      </div>
+
+      <!-- Policy Links -->
+      <div
+        class="flex flex-wrap justify-center space-x-4 text-gray-500 text-xs mb-6"
+      >
+        <a href="#" class="hover:underline">privacy policy</a>
+        <a href="#" class="hover:underline">terms</a>
+        <a href="#" class="hover:underline">accessibility</a>
+        <a href="#" class="hover:underline">set my cookie choices</a>
+        <a href="#" class="hover:underline">cookie policy</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="flex justify-center text-gray-400 text-xs">
+        © 2024 All rights reserved.
+      </div>
+    </footer>
+
+      <!-- by Shirin -->
   </body>
 </html>
